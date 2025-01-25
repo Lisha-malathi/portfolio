@@ -1,0 +1,212 @@
+:root {
+    --primary-color: #f44336; 
+    --secondary-color: #9c27b0; 
+    --text-color: #ffffff; 
+    --background-color: brown; 
+    --highlight-color:  blue; 
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.header-background {
+    background: linear-gradient(45deg, #ff4081, #9c27b0);
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 10s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    top: 0px;
+    width: 60%;
+    backdrop-filter: blur(10px);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--highlight-color);
+    transform: scale(1.1);
+}
+
+.header-content img {
+    width: 250px;
+    margin-top: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 10s ease-in-out;
+
+
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #ff6f61, #fbc8d4);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.header-content p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+#about {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #ff6f61, #9c27b0);
+    color: var(--text-color);
+    text-align: center;
+    animation: fadeIn 10s ease-in-out;
+
+}
+
+.profile-photo {
+    height: 300px;
+    width: 200px;
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 5s ease-in-out;
+
+}
+
+.about-list {
+    list-style-type: disc;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    display: inline-block;
+}
+.certificate-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+    padding:15px;
+}
+
+#certificate {
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(120deg, #b5603f, #4027b0);
+}
+
+.certificate-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.certificate-btn {
+    padding: 15px 30px;
+    background: var(--certificate-btn-bg);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-btn:hover {
+    background: var(--highlight-color);
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.program-btn {
+    padding: 18px 36px;
+    font-size: 1.3rem;
+    color: #fff;
+    background: var(--cv-btn-bg);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s, letter-spacing 0.3s;
+}
+
+.program-btn:hover {
+    background: linear-gradient(45deg, #c34a8d, #6a4caf);
+    transform: scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    letter-spacing: 2px;
+}
+
+.cv-btn {
+    padding: 12px 30px;
+    background: linear-gradient(45deg, #ff9800, #f44336);
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cv-btn:hover {
+    background: linear-gradient(45deg, #c2185b, #8e24aa);
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+#contact {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #1b1b1b, #00bcd4);
+    text-align: center;
+}
+
+.social-links img {
+    width: 50px;
+    margin: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
